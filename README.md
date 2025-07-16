@@ -29,7 +29,7 @@
 ## Funcionalidades
 
 <p>
-  Nesse projeto é possível visualizar mapas interativos com rastreamento de veículos em tempo real, alternar entre diferentes idiomas, e personalizar a visualização do mapa com marcadores e rotas.
+  Nesse projeto é possível visualizar mapas interativos com rastreamento usando as coordenadas do veiculo, alternar entre diferentes idiomas, e personalizar a visualização do mapa com marcadores e rotas.
 </p>
 
 ## Como rodar a aplicação :arrow_forward:
