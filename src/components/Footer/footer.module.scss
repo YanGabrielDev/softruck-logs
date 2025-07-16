@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 1.5rem 1rem;
+  font-family: $font-inter;
+
+  &Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &Content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .techStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+
+    @media (min-width: 480px) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  .techLabel {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .techBadges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+    span {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+  }
+
+  .footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: auto;
+      justify-content: flex-end;
+    }
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.25rem 0;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    @media (min-width: 480px) {
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
