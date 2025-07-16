@@ -1,0 +1,14 @@
+{
+  "appTitle": "Frontend 3D Car Tracker",
+  "selectTrajectory": "Select Trajectory:",
+  "play": "Play Animation",
+  "pause": "Pause Animation",
+  "reset": "Reset Animation",
+  "speed": "Speed: {{speed}} km/h",
+  "latitude": "Lat:",
+  "longitude": "Lon:",
+  "direction": "Dir:",
+  "address": "Address:",
+  "animationSpeed": "speed",
+  "notFoundTrajectory": "trajectory not found"
+}

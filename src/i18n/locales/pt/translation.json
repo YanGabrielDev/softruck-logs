@@ -1,0 +1,14 @@
+{
+  "appTitle": "Rastreador de Carro 3D Frontend",
+  "selectTrajectory": "Selecionar Trajetória:",
+  "play": "Reproduzir Animação",
+  "pause": "Pausar Animação",
+  "reset": "Reiniciar Animação",
+  "speed": "Velocidade: {{speed}} km/h",
+  "latitude": "Lat:",
+  "longitude": "Lon:",
+  "direction": "Dir:",
+  "address": "Endereço:",
+  "animationSpeed": "Velocidade",
+  "notFoundTrajectory": "Trajetoria não encontrada"
+}
