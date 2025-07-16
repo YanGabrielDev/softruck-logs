@@ -11,20 +11,18 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: {
-        translation: enTranslation,
-      },
-      pt: {
-        translation: ptTranslation,
-      },
-      es: {
-        translation: esTranslation,
-      },
+      en: { translation: enTranslation },
+      pt: { translation: ptTranslation },
+      es: { translation: esTranslation },
     },
     fallbackLng: "pt",
     debug: false,
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      order: ["navigator", "htmlTag", "path", "subdomain"],
+      caches: ["localStorage", "cookie"],
     },
   });
 

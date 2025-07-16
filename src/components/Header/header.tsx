@@ -20,8 +20,9 @@ export const Header: React.FC = () => {
           className={styles.languageSelect}
           aria-label="Select language"
         >
-          <option value="en">En</option>
           <option value="pt">Pt</option>
+
+          <option value="en">En</option>
           <option value="es">Es</option>
         </select>
       </div>
