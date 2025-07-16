@@ -1,0 +1,27 @@
+import React from "react";
+import { gpsData } from "./mocks/gps-data.mock";
+import styles from "./app.module.scss";
+import { Header } from "./components/Header";
+import { CarAnimator } from "./components/CarAnimator";
+import { useTranslation } from "react-i18next";
+
+const App: React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <div className={styles.appContainer}>
+      <Header />
+      <main className={styles.mainContent}>
+        {gpsData.courses && gpsData.courses.length > 0 ? (
+          <>
+            <CarAnimator trajectory={gpsData.courses[0].gps} />
+          </>
+        ) : (
+          <p className={styles.noDataMessage}>{t("notFoundTrajectory")}</p>
+        )}
+      </main>
+      {/* <Footer /> */}
+    </div>
+  );
+};
+
+export default App;
