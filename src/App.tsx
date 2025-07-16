@@ -15,9 +15,10 @@ const App: React.FC = () => {
       <main className={styles.mainContent}>
         <div className={styles.pageTitle}>
           <h1>
-            Monitoramento <span>de rota:</span>
+            {t("monitoring")} <span>{t("routeMonitoring")}:</span>
           </h1>
         </div>
+
         {gpsData.courses && gpsData.courses.length > 0 ? (
           <>
             <CarAnimator trajectory={gpsData.courses[0].gps} />
