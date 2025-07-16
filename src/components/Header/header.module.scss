@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.header {
+  background-color: $header-footer-bg;
+  color: $primary-color;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 135px;
+    height: auto;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .languageSwitcher {
+    position: relative;
+
+    .languageSelect {
+      appearance: none;
+      padding: 0.5rem 2rem 0.5rem 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      background-color: white;
+      color: $text-color;
+      font-family: $font-inter;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-size: 1rem;
+
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+      }
+
+      option {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
