@@ -10,5 +10,8 @@
   "direction": "Dir:",
   "address": "Endereço:",
   "animationSpeed": "Velocidade",
-  "notFoundTrajectory": "Trajetoria não encontrada"
+  "notFoundTrajectory": "Trajetoria não encontrada",
+  "monitoring": "Monitoramento",
+  "routeMonitoring": "de rota",
+  "technologiesUsed": "Tecnologias utilizadas"
 }

@@ -1,12 +1,14 @@
+import { useTranslation } from "react-i18next";
 import styles from "./footer.module.scss";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerContent}>
           <div className={styles.techStack}>
-            <span className={styles.techLabel}>Tecnologias utilizadas:</span>
+            <span className={styles.techLabel}>{t("technologiesUsed")}:</span>
             <div className={styles.techBadges}>
               <span>TypeScript</span>
               <span>React</span>

@@ -10,5 +10,8 @@
   "direction": "Dir:",
   "address": "Address:",
   "animationSpeed": "speed",
-  "notFoundTrajectory": "trajectory not found"
+  "notFoundTrajectory": "trajectory not found",
+  "monitoring": "Route",
+  "routeMonitoring": "monitoring",
+  "technologiesUsed": "Technologies used"
 }
