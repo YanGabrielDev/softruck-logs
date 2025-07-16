@@ -1,4 +1,3 @@
-// src/i18n/index.ts
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
@@ -19,9 +18,9 @@ i18n
       },
     },
     fallbackLng: "en",
-    debug: false, // Set to true for development to see i18n logs
+    debug: false,
     interpolation: {
-      escapeValue: false, // React already escapes by default
+      escapeValue: false,
     },
   });
 
