@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.mapContainer {
+  flex-grow: 1;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  position: relative;
+  .car-marker-icon {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .carIcon {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+
+    background-repeat: no-repeat;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .trajectoryLine {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
