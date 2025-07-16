@@ -1,10 +1,9 @@
-// src/types/index.ts
 export interface GPSPoint {
   longitude: number;
   latitude: number;
   acquisition_time_unix: number;
-  speed: number; // km/h
-  direction: number; // Degrees
+  speed: number;
+  direction: number;
   acquisition_time: string;
   address?: string;
 }
