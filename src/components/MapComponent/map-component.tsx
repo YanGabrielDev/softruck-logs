@@ -90,7 +90,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
               currentCarPosition.longitude,
             ]}
             icon={carIcon}
-            zIndexOffset={1000} // Garante que o carro fique acima de outros elementos
+            zIndexOffset={1000}
           />
           <MapUpdater
             center={[currentCarPosition.latitude, currentCarPosition.longitude]}
